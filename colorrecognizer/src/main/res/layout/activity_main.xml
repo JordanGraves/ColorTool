@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jgraves.colorrecognizer.app.MainActivity">
+    <com.jgraves.colorrecognizer.app.Preview
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+    </com.jgraves.colorrecognizer.app.Preview>
+    <com.jgraves.colorrecognizer.app.ProgressWheel
+        android:id="@+id/pw_spinner"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:visibility="visible"
+        ProgressWheel:text="Collecting..."
+        ProgressWheel:textColor="#222"
+        ProgressWheel:textSize="14sp"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barWidth="0dp"
+        ProgressWheel:rimWidth="2dp">
+    </com.jgraves.colorrecognizer.app.ProgressWheel>
+</RelativeLayout>
